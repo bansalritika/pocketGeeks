@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; 
+}
+
+.cosmic-scroll {
+    background-color: #55efc4;
+background-image: linear-gradient(315deg, #55efc4 0%, #000000 74%);
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+color: #F5F4F3;
+    font-family: wfont_1d32d8_19459c7b05ca467ebad6718ecdc204c4, wf_19459c7b05ca467ebad6718ec, orig_boowie;
+    font-size: clamp(0.5px, calc((11.641 * var(--one-unit)) - (var(--scrollbar-width) * 0.11641)), calc(0.116 * var(--section-max-width)));
+    text-decoration: none;
+    text-align: left;
+    line-height: 0.9;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cosmic-scroll {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cosmic-scroll {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+}
